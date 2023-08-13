@@ -1,0 +1,66 @@
+/* ************Général******************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(142, 162, 198);
+}
+
+/* **************Header****************************** ************ */
+nav {
+    background-color: rgb(153, 51, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    background-color: rgb(153, 51, 0);
+    padding: 30px;
+    color: darkgrey;
+}
+
+/* *****************Main******************************* */
+main {
+    min-height: 100vh;
+}
+
+/* h1 {
+    color: red;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+h2 {
+    color: goldenrod;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+h3 {
+    color: gold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 15px;
+} */
+
+li {
+    list-style: none;
+}
+
+
+/* *******************Footer***************************** */
+footer {
+    color: wheat;
+    background-color: #0a4275;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
