@@ -5,7 +5,7 @@ namespace Models\Managers;
 use Core\Manager;
 use Core\DAO;
 
-class DeckManager extends Manager
+class MovieManager extends Manager
 {
 
     protected $className = "Models\Entities\Deck";

@@ -28,11 +28,11 @@
     <header>
         <nav>
             <a href="index.php?ctrl=home&action=index">Accueil</a>
-            <a href="#">Les Jeux</a>
-            <a href="#">Les Créatures</a>
-            <a href="#">Contenu Officiel</a>
-            <a href="#">Contenu Vidéo</a>
-            <a href="#">Les Dérivés</a>
+            <a href="index.php?ctrl=games&action=">Les Jeux</a>
+            <a href="index.php?ctrl=creature&action=">Les Créatures</a>
+            <a href="index.php?ctrl=wiki&action=">Contenu Officiel</a>
+            <a href="index.php?ctrl=video&action=">Contenu Vidéo</a>
+            <a href="index.php?ctrl=Derive&action=listDerives">Les Dérivés</a>
         </nav>
     </header>
     <main>

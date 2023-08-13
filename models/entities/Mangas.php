@@ -8,8 +8,10 @@ final class Mangas extends Entity
 {
 
     private $id;
-    private $mangasName;
-    private $histoire;
+    private $name;
+    private $story;
+    private $releaseDate;
+    private $writter;
     private $img;
 
     public function __construct($data)
@@ -27,24 +29,24 @@ final class Mangas extends Entity
         $this->id = $id;
     }
 
-    public function getMangasName()
+    public function getName()
     {
-        return $this->mangasName;
+        return $this->name;
     }
 
-    public function setMangasName($mangasName)
+    public function setName($name)
     {
-        $this->mangasName = $mangasName;
+        $this->name = $name;
     }
 
-    public function getHistoire()
+    public function getStory()
     {
-        return $this->histoire;
+        return $this->story;
     }
 
-    public function setHistoire($histoire)
+    public function setStory($story)
     {
-        $this->histoire = $histoire;
+        $this->story = $story;
     }
     public function getImg()
     {
@@ -56,9 +58,31 @@ final class Mangas extends Entity
         $this->img = $img;
     }
 
-    public function __toString()
+    public function getReleaseDate()
     {
-        return $this->getId() . " " . $this->getMangasName() . " " . $this->getHistoire() . " " . $this->getImg();
+        return $this->releaseDate->format("d/m/Y");
     }
 
+    public function setReleaseDate($releaseDate)
+    {
+        $this->releaseDate = new \DateTime($releaseDate);
+        return $this;
+        ;
+    }
+
+    public function getWritter()
+    {
+        return $this->writter;
+    }
+
+    public function setWritter($writter)
+    {
+        $this->writter = $writter;
+
+    }
+
+    public function __toString()
+    {
+        return $this->getId() . " " . $this->getName() . " " . $this->getStory() . " " . $this->getImg() . " " . $this->getReleaseDate() . " " . $this->getWritter();
+    }
 }
