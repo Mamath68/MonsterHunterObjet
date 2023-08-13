@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,10 +28,10 @@
     <header>
         <nav>
             <a href="index.php?ctrl=home&action=index">Accueil</a>
-            <a href="#">Contenu Vidéo</a>
             <a href="#">Les Jeux</a>
             <a href="#">Les Créatures</a>
             <a href="#">Contenu Officiel</a>
+            <a href="#">Contenu Vidéo</a>
             <a href="#">Les Dérivés</a>
         </nav>
     </header>
