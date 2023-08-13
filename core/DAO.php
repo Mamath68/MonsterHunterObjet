@@ -15,7 +15,7 @@ abstract class DAO
     // Nom et n° de port de l'hôte
     private static $host = 'mysql:host=127.0.0.1;port=3306';
     // Nom de la Base de Donnée
-    private static $dbname = 'projetfinformation';
+    private static $dbname = 'projetmh';
     // Identifiant pour se connecter
     private static $dbuser = 'root';
     // mot de passe, vide car pas de mdp

@@ -1,6 +1,5 @@
 <?php
 
-// Ouvre le namespace Controllers
 namespace Controllers;
 
 use Core\Session;
@@ -9,17 +8,22 @@ use Core\ControllerInterface;
 use Models\Managers\CastingManager;
 
 
-// class CardController hérite de la classe AbstractController et implémente ControllerInterface.
 class GameController extends AbstractController implements ControllerInterface
 {
 
     public function index()
     {
-            return [
-                "view" => VIEW_DIR . "home.php",
-            ];
+        return [
+            "view" => VIEW_DIR . "home.php",
+        ];
     }
 
-    
+    public function findAllGames()
+    {
+
+        return [
+            "view" => VIEW_DIR . "MonsterHunter/Jeux/ListeJeux.php",
+        ];
+    }
 
 }

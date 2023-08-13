@@ -1,16 +1,25 @@
 /* iPads (portrait) ----------- */
-@media only screen and (device-width : 820px) and (device-height : 1180px) and (-webkit-device-pixel-ratio: 1.0) {
+@media only screen and (device-width : 820px) {
 
     /* ************Général******************* */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        /* border: 2px solid red; */
     }
 
     body {
         background-color: rgb(142, 162, 198);
+    }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
     }
 
     /* **************Header****************************** ************ */
@@ -28,123 +37,101 @@
     }
 
     /* *****************Main******************************* */
-    h1 {
-        color: red;
-        font-size: 30px;
-        text-decoration: underline;
-        padding: 1em;
+    main {
+        min-height: 100vh;
     }
 
-    h2 {
-        padding: 1em 2em 1em 2em;
-        color: goldenrod;
-        font-size: 25px;
-        text-decoration: underline;
-        width: fit-content;
-    }
+    /* h1 {
+    color: red;
+    font-size: 30px;
+    text-decoration: underline;
+}
 
-    h3 {
-        padding: 2em;
-        color: gold;
-        font-size: 25px;
-        text-decoration: underline;
-        width: fit-content;
-    }
+h2 {
+    color: goldenrod;
+    font-size: 25px;
+    text-decoration: underline;
+}
 
-    p {
-        padding: 2em;
-        font-size: 15px;
-        width: fit-content;
-    }
+h3 {
+    color: gold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 15px;
+} */
 
     li {
-        padding: 2em;
         list-style: none;
     }
 
+    .mangas {
+        margin-top: 3rem;
+    }
+
+    .mangas img {
+        width: auto;
+        max-height: 25vh;
+    }
+
+    .primetitle {
+        background-color: black;
+        width: 100%;
+    }
+
+    .detail img {
+        width: auto;
+        max-height: 60vh;
+    }
+
+    .mangasdetail {
+        margin-top: 3rem;
+    }
+
+
+    .detail {
+        flex: 1 0 0%;
+        display: grid;
+        align-content: center;
+    }
+
+
 
     /* *******************Footer***************************** */
-    button {
-        position: relative;
-        height: 70px;
-        width: 250px;
-        border: 3px solid red;
-        background-color: red;
-        font-size: 1.5em;
-        color: white;
-        transition: 0.3s;
-        z-index: 2;
-        overflow: hidden;
-    }
-
-    button:hover {
-        color: #31489f;
-        width: 280px;
-    }
-
-    button::before {
-        content: "";
-        position: absolute;
-        height: 70px;
-        width: 280px;
-        background-color: orange;
-        top: -2px;
-        left: -2px;
-        transform: translate(-100%);
-        transition: 0.3s;
-        z-index: -1;
-    }
-
-    button:hover::before {
-        transform: translate(0%);
-    }
-
-    button i {
-        transform: scale(0);
-        margin: -10px;
-        transition: 0.3s;
-    }
-
-    button:hover i {
-        transform: scale(1);
-        margin-left: 10px;
-    }
-
     footer {
-        background-color: red;
-        color: white;
-        width: 100%;
-        text-align: center;
-        margin: 1em 0 0 0;
-        padding: 1em;
-        bottom: 0;
+        color: wheat;
+        background-color: #0a4275;
     }
 
-    .absolute {
-        background-color: red;
-        color: white;
-        width: 100%;
-        text-align: center;
-        margin: 1em 0 0 0;
-        padding: 1em;
-        bottom: 0;
-        position: absolute;
+    .footer {
+        background-color: rgba(0, 0, 0, 0.2);
     }
 }
 
 /* iPads (landscape) ----------- */
-@media only screen and (device-width :1180px) and (device-height : 820px) and (-webkit-device-pixel-ratio : 2) {
+@media only screen and (device-width :1180px) {
 
     /* ************Général******************* */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        /* border: 2px solid red; */
     }
 
     body {
         background-color: rgb(142, 162, 198);
+    }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
     }
 
     /* **************Header****************************** ************ */
@@ -162,106 +149,75 @@
     }
 
     /* *****************Main******************************* */
+    main {
+        min-height: 100vh;
+    }
+
     h1 {
         color: red;
         font-size: 30px;
         text-decoration: underline;
-        padding: 1em;
     }
 
     h2 {
-        padding: 1em 2em 1em 2em;
         color: goldenrod;
         font-size: 25px;
         text-decoration: underline;
-        width: fit-content;
     }
 
     h3 {
-        padding: 2em;
         color: gold;
         font-size: 25px;
         text-decoration: underline;
-        width: fit-content;
     }
 
     p {
-        padding: 2em;
         font-size: 15px;
-        width: fit-content;
     }
 
     li {
-        padding: 2em;
         list-style: none;
     }
 
+    .mangas {
+        margin-top: 3rem;
+    }
+
+    .mangas img {
+        width: auto;
+        max-height: 25vh;
+    }
+
+    .primetitle {
+        background-color: black;
+        width: 100%;
+    }
+
+    .detail img {
+        width: auto;
+        max-height: 60vh;
+    }
+
+    .mangasdetail {
+        margin-top: 3rem;
+    }
+
+
+    .detail {
+        flex: 1 0 0%;
+        display: grid;
+        align-content: center;
+    }
+
+
 
     /* *******************Footer***************************** */
-    button {
-        position: relative;
-        height: 70px;
-        width: 250px;
-        border: 3px solid red;
-        background-color: red;
-        font-size: 1.5em;
-        color: white;
-        transition: 0.3s;
-        z-index: 2;
-        overflow: hidden;
-    }
-
-    button:hover {
-        color: #31489f;
-        width: 280px;
-    }
-
-    button::before {
-        content: "";
-        position: absolute;
-        height: 70px;
-        width: 280px;
-        background-color: orange;
-        top: -2px;
-        left: -2px;
-        transform: translate(-100%);
-        transition: 0.3s;
-        z-index: -1;
-    }
-
-    button:hover::before {
-        transform: translate(0%);
-    }
-
-    button i {
-        transform: scale(0);
-        margin: -10px;
-        transition: 0.3s;
-    }
-
-    button:hover i {
-        transform: scale(1);
-        margin-left: 10px;
-    }
-
     footer {
-        background-color: red;
-        color: white;
-        width: 100%;
-        text-align: center;
-        margin: 1em 0 0 0;
-        padding: 1em;
-        bottom: 0;
+        color: wheat;
+        background-color: #0a4275;
     }
 
-    .absolute {
-        background-color: red;
-        color: white;
-        width: 100%;
-        text-align: center;
-        margin: 1em 0 0 0;
-        padding: 1em;
-        bottom: 0;
-        position: absolute;
+    .footer {
+        background-color: rgba(0, 0, 0, 0.2);
     }
 }

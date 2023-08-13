@@ -1,6 +1,5 @@
 <?php
 
-// Ouvre le namespace Controllers
 namespace Controllers;
 
 use Core\Session;
@@ -9,37 +8,49 @@ use Core\ControllerInterface;
 use Models\Managers\MovieManager;
 use Models\Managers\MangasManager;
 
-
-// class CardController hérite de la classe AbstractController et implémente ControllerInterface.
 class DeriveController extends AbstractController implements ControllerInterface
 {
 
     public function index()
     {
-        
-            return [
-                "view" => VIEW_DIR . "home.php",
-            ];
+
+        return [
+            "view" => VIEW_DIR . "home.php",
+        ];
 
     }
     public function listDerives()
     {
-        $animeManager = new MovieManager();
+        $movieManager = new MovieManager();
+        $mangasManager = new MangasManager();
 
         return [
-            "view" => VIEW_DIR . "MonsterHunter/Derive/Derives.php",
+            "view" => VIEW_DIR . "MonsterHunter/Derives/Derives.php",
             "data" => [
-                "derives" => $animeManager->findAll()
+                "derives" => $movieManager->findAll(),
+                "derive" => $mangasManager->findAll()
             ]
         ];
     }
     public function findDeriveById($id)
     {
-        $animeManager = new MovieManager();
+        $movieManager = new MovieManager();
+        $mangasManager = new MangasManager();
         return [
-            "view" => VIEW_DIR . "MonsterHunter/Derive/DetailDerives.php",
+            "view" => VIEW_DIR . "MonsterHunter/Derives/DetailDerives.php",
             "data" => [
-                "derives" => $animeManager->findOneById($id),
+                "derives" => $movieManager->findOneById($id),
+            ]
+        ];
+
+    }
+    public function findDerivesById($id)
+    {
+        $mangasManager = new MangasManager();
+        return [
+            "view" => VIEW_DIR . "MonsterHunter/Derives/DetailsDerive.php",
+            "data" => [
+                "derive" => $mangasManager->findOneById($id),
             ]
         ];
 

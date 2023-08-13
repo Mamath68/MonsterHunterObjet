@@ -10,8 +10,7 @@ final class Mangas extends Entity
     private $id;
     private $name;
     private $story;
-    private $releaseDate;
-    private $writter;
+    private \DateTime $releaseDate;
     private $img;
 
     public function __construct($data)
@@ -67,22 +66,11 @@ final class Mangas extends Entity
     {
         $this->releaseDate = new \DateTime($releaseDate);
         return $this;
-        ;
     }
 
-    public function getWritter()
-    {
-        return $this->writter;
-    }
-
-    public function setWritter($writter)
-    {
-        $this->writter = $writter;
-
-    }
 
     public function __toString()
     {
-        return $this->getId() . " " . $this->getName() . " " . $this->getStory() . " " . $this->getImg() . " " . $this->getReleaseDate() . " " . $this->getWritter();
+        return $this->getId() . " " . $this->getName() . " " . $this->getStory() . " " . $this->getImg() . " " . $this->getReleaseDate();
     }
 }

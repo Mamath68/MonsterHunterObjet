@@ -1,4 +1,6 @@
-/* ************Général******************* */
+@media only screen and (min-width : 1224px) {
+
+    /* ************Général******************* */
 * {
     margin: 0;
     padding: 0;
@@ -17,35 +19,8 @@ h4,
 h5,
 h6 {
     text-align: center;
-    text-decoration: underline;
 }
 
-thead,
-tbody,
-th,
-tr,
-td {
-    border: 2px solid wheat;
-    table-layout: auto;
-    width: 100rem;
-    color: wheat;
-    background-color: black;
-}
-
-.table {
-    vertical-align: middle;
-}
-
-/* .box{
-    display: none;
-    width: 100%;
-}
-
-a:hover + .box,.box:hover{
-    display: block;
-    position: relative;
-    z-index: 100;
-} */
 /* **************Header****************************** ************ */
 nav {
     background-color: rgb(153, 51, 0);
@@ -55,15 +30,37 @@ nav {
 }
 
 nav a {
+    background-color: rgb(153, 51, 0);
     padding: 30px;
     color: darkgrey;
-    text-decoration: none;
 }
 
 /* *****************Main******************************* */
 main {
     min-height: 100vh;
 }
+
+/* h1 {
+    color: red;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+h2 {
+    color: goldenrod;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+h3 {
+    color: gold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 15px;
+} */
 
 li {
     list-style: none;
@@ -109,4 +106,5 @@ footer {
 
 .footer {
     background-color: rgba(0, 0, 0, 0.2);
+}
 }

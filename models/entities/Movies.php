@@ -4,16 +4,14 @@ namespace Models\Entities;
 
 use Core\Entity;
 
-final class Deck extends Entity
+final class Movies extends Entity
 {
 
     private $id;
-    private $userId;
-    private $deckName;
-    private $cards;
-    private $deckPresentation;
-    private $imgDeck;
-    private \DateTime $deckDate;
+    private $name;
+    private $story;
+    private $img;
+    private \DateTime $releaseDate;
 
     public function __construct($data)
     {
@@ -30,68 +28,49 @@ final class Deck extends Entity
         $this->id = $id;
     }
 
-    public function getUserId()
+
+    public function getName()
     {
-        return $this->userId;
+        return $this->name;
     }
 
-    public function setUserId($userId)
+    public function setName($name)
     {
-        $this->userId = $userId;
+        $this->name = $name;
     }
 
-    public function getDeckName()
+    public function getReleaseDate()
     {
-        return $this->deckName;
+        return $this->releaseDate->format("d/m/Y");
     }
 
-    public function setDeckName($deckName)
+    public function setReleaseDate($releaseDate)
     {
-        $this->deckName = $deckName;
-    }
-
-    public function getDeckDate()
-    {
-        return $this->deckDate->format("d/m/Y à H:i");
-    }
-
-    public function setDeckDate($deckDate)
-    {
-        $this->deckDate = new \DateTime($deckDate);
+        $this->releaseDate = new \DateTime($releaseDate);
         return $this;
     }
 
-    public function getCards()
+    public function getStory()
     {
-        return $this->cards;
+        return $this->story;
     }
 
-    public function setCards($cards)
+    public function setStory($story)
     {
-        $this->cards = $cards;
+        $this->story = $story;
     }
 
-    public function getDeckPresentation()
+    public function getImg()
     {
-        return $this->deckPresentation;
+        return $this->img;
     }
 
-    public function setDeckPresentation($deckPresentation)
+    public function setImg($img)
     {
-        $this->deckPresentation = $deckPresentation;
-    }
-
-    public function getImgDeck()
-    {
-        return $this->imgDeck;
-    }
-
-    public function setImgDeck($imgDeck)
-    {
-        $this->imgDeck = $imgDeck;
+        $this->img = $img;
     }
     public function __toString()
     {
-        return $this->getId() . " " . $this->getDeckName() . " " . $this->getDeckPresentation() . $this->getImgDeck() . " " . $this->getCards() . " " . $this->getDeckDate();
+        return $this->getId() . " " . $this->getName() . $this->getImg() . " " . $this->getStory() . " " . $this->getReleaseDate();
     }
 }

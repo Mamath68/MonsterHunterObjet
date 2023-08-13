@@ -19,18 +19,18 @@ class CreatureController extends AbstractController implements ControllerInterfa
         ];
     }
 
-    public function findAllCaracters()
+    public function findAllCreatures()
     {
         return [
-            "view" => VIEW_DIR . "cards/cartes/listCard.php",
+            "view" => VIEW_DIR . "MonsterHunter/Creatures/listCreatures.php",
 
         ];
 
     }
-    public function findAutor()
+    public function findCreatureById($id)
     {
         return [
-            "view" => VIEW_DIR . "cards/cartes/listCard.php",
+            "view" => VIEW_DIR . "MonsterHunter/Creatures/detailCreatures.php",
 
         ];
 

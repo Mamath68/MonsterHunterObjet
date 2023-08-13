@@ -1,12 +1,15 @@
 <?php
-$movies = $result["data"]["derives"];
-// var_dump($movies);
+$mangas = $result["data"]["derive"];
+// var_dump($mangas);
 
-foreach ($movies as $derive) {
+foreach ($mangas as $derive) {
+
   ?>
+
   <h1 class="p-3 primetitle text-light">
     <?= $derive->getName() ?>
   </h1>
+
   <div class="container text-center mangasdetail">
     <div class="row">
       <div class="col detail"><img src="public/img/<?= $derive->getImg() ?>" class="img-fluid"></div>

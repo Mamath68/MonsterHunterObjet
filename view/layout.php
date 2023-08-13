@@ -13,9 +13,9 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <!-- Bootstrap JS -->
     <link rel="stylesheet" href="public/css/style.css">
-    <!-- <link rel="stylesheet" href="public/CSS/smartphone.css"> -->
-    <!-- <link rel="stylesheet" href="public/CSS/tablette.css"> -->
-    <!-- <link rel="stylesheet" href="public/CSS/exam.css"> -->
+    <link rel="stylesheet" href="public/CSS/smartphone.css">
+    <link rel="stylesheet" href="public/CSS/tablette.css">
+    <!-- <link rel="stylesheet" href="public/CSS/tv.css"> -->
     <link rel="stylesheet" href="public/tarteaucitron/css/tarteaucitron.css">
     <script src="public/tarteaucitron/tarteaucitron.js"></script>
     <link rel="shortcut icon" href="public/img/MH.webp" type="image/x-icon">
@@ -28,10 +28,10 @@
     <header>
         <nav>
             <a href="index.php?ctrl=home&action=index">Accueil</a>
-            <a href="index.php?ctrl=games&action=">Les Jeux</a>
-            <a href="index.php?ctrl=creature&action=">Les Créatures</a>
-            <a href="index.php?ctrl=wiki&action=">Contenu Officiel</a>
-            <a href="index.php?ctrl=video&action=">Contenu Vidéo</a>
+            <a href="index.php?ctrl=game&action=findAllGames">Les Jeux</a>
+            <a href="index.php?ctrl=creature&action=findAllCreatures">Les Créatures</a>
+            <a href="index.php?ctrl=wiki&action=findOfficielContent">Contenu Officiel</a>
+            <a href="index.php?ctrl=video&action=findVideoChannel">Contenu Vidéo</a>
             <a href="index.php?ctrl=Derive&action=listDerives">Les Dérivés</a>
         </nav>
     </header>
@@ -60,7 +60,6 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- <footer><small>Monster Hunter 2004-2023</small></footer> -->
 
 
     <script src="public/js/script.js"></script>
