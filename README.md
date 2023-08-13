@@ -1,3 +1,4 @@
 # MonsterHunterObjet
 
-# Une refonte d'un ancien projet avec un amis d'une précedente formation.
+# Une refonte d'un ancien projet avec un ami d'une précédente formation.
+# Mise en Objet d'un site originalement en HTML pure
