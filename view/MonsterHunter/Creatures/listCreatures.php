@@ -1,1 +1,5 @@
-<h1>Listes des personnages</h1>
+<h1>Listes des Créatures</h1>
+
+<?php
+$title = "Les Créatures";
+?>
